@@ -5,7 +5,7 @@ Tic Tac Toe written in Python with PyQt
 ## Installation
 1. Clone the repository:
  ```bash
-    git clone https://github.com/kustyk97/IndoorFaceRecognition.git
+    git clone https://github.com/kustyk97/PyTicTacToe.git
  ```
 2. Navigate to the project directory:
  ```bash
