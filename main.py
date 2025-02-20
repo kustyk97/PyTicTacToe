@@ -2,7 +2,7 @@
 
 import sys
 from PyQt5.QtWidgets import QApplication
-from PyTicTacToe.PyTicTacToe import TicTacToe
+from PyTicTacToe import TicTacToe
 
 
 if __name__ == "__main__":

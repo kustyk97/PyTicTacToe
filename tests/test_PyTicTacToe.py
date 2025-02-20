@@ -2,6 +2,7 @@ import unittest
 from PyQt5.QtWidgets import QApplication
 from PyTicTacToe.PyTicTacToe import TicTacToe
 
+
 class TestTicTacToe(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -31,11 +32,13 @@ class TestTicTacToe(unittest.TestCase):
         o_moves = [(0, 1), (1, 0), (1, 1), (2, 2)]
         for i, move in enumerate(x_moves):
             self.game.buttons[move].setText("X")
-    
+
         for i, move in enumerate(o_moves):
             self.game.buttons[move].setText("O")
         self.assertFalse(self.game.check_winner())
-        self.assertTrue(all(button.text() != "" for button in self.game.buttons.values()))
+        self.assertTrue(
+            all(button.text() != "" for button in self.game.buttons.values())
+        )
 
     def tearDown(self):
         self.game.close()
@@ -43,6 +46,7 @@ class TestTicTacToe(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.app.quit()
+
 
 if __name__ == "__main__":
     unittest.main()
